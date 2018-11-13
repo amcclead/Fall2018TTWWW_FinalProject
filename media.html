@@ -3,8 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <title>Media::Immigrant Sandwich</title>
+<link rel="stylesheet" href="/css/master.css">
+<script type="text/javascript">
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </head>
 
 <body>
+
+  <nav class="MainNavigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+        <li><div class="dropdown"><button onclick="myFunction()" class="dropbtn">About</button>
+          <div id= "aboutDropdown" class="dropdown-content">
+            <a href="About_Us.html">General</a>
+            <a href="bios.html">The Crew</a>
+            <a href="values.html">Our Values</a>
+            <a href="community.html">Our Community</a>
+          </div>
+        </div></li>
+
+      <li><a href="events.html">Events</a></li>
+      <li><a href="media.html">Social Media</a></li>
+    </ul>
+  </nav>
+<img src="/images/social_media.jpg" alt="social media image" width="100%">
+  <footer>
+    <a href="contact.html"></a>
+  </footer>
 </body>
 </html>
