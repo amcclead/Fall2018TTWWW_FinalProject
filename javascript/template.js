@@ -16,7 +16,7 @@ let navContent= `<ul>
 `;
 
 
-let footerContent= `<a href= "https://www.facebook.com/immigrantsandwich"><img class="facebookLogo" src="/images/facebook.png" alt="Facebook Icon" width="50px">`
+let footerContent= `<a href= "https://www.facebook.com/immigrantsandwich"><img class="facebookLogo" src="images/facebook.png" alt="Facebook Icon" width="50px">`
 
 document.querySelector('.MainNavigation').innerHTML = navContent;
 document.querySelector('footer').innerHTML = footerContent;
