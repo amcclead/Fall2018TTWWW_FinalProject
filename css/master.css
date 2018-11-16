@@ -60,10 +60,23 @@ figure figcaption{
 article{
   margin: 10px;
 }
+
+article p {
+	
+}
+
+.floatimageleft{
+	margin-right: 20px;
+	
+}
 /* Footer */
 
 .facebookLogo {
   float:right;
+}
+
+footer {
+	clear: both;
 }
 
 /* nav dropdown about */
