@@ -4,6 +4,7 @@
 
 body {
   margin: 0px;
+	
 }
 
 /* Header */
@@ -62,13 +63,23 @@ article{
 }
 
 article p {
-	
+	line-height: 25px;
+	/*background-image: url(images/chicago-skyline-at-night-1476869530gRz.jpg)*/
 }
 
 .floatimageleft{
 	margin-right: 20px;
 	
 }
+
+/*.backgroundimage {
+	background-image: image()*/
+}
+
+/*main strong {
+	text-align: center;
+}*/
+
 /* Footer */
 
 .facebookLogo {
