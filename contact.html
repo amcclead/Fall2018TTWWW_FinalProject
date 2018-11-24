@@ -12,7 +12,24 @@
 <body>
 
   <nav class="MainNavigation"></nav>
-
+<form action="mailto:contact@renatacamara.com" method="post" name="contactform" id="contactform">
+    Get in touch with us
+  <div class="myRow">
+    <label class="labelCol" for="myName">Name</label>
+    <input type="text" maxlength="256" size="30" id="myName" />
+  </div>
+  <div class="myRow">
+    <label class="labelCol" for="myEmail">E-mail</label>
+    <input type="text" maxlength="256" size="30" id="myEmail" />
+  </div>
+  <div class="myRow">
+    <label class="labelCol" for="myJob">Message</label>
+    <textarea name="myMessage" id="myMessage" rows="3" cols="40"></textarea>
+  </div>
+  <div class="mySubmit">
+    <input type="submit" value="Send message" />
+  </div>
+</form>
   <footer></footer>
 
 </body>
