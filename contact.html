@@ -12,24 +12,32 @@
 <body>
 
   <nav class="MainNavigation"></nav>
-    <img src="images/envelope.jpg" alt="email" align="center"> 
-<form action="mailto:contact@renatacamara.com" method="post" name="contactform" id="contactform">
-    Get in touch with us
+    <img src="images/envelope.jpg" alt="email" style="width:80px;height:80px;text-align: top; padding-left: 65px; padding-top: 30px; padding-bottom: 240px"/>
+<div class="container_contact">
+<form action="mailto:contact@renatacamara.com" method="post" name="contactform" id="contactform" enctype="text/plain">
   <div class="myRow">
     <label class="labelCol" for="myName">Name</label>
-    <input type="text" maxlength="256" size="30" id="myName" />
+    <input type="text" maxlength="256" size="45" id="myName" />
   </div>
+  
+  <br>
+    
   <div class="myRow">
-    <label class="labelCol" for="myEmail">E-mail</label>
-    <input type="text" maxlength="256" size="30" id="myEmail" />
+    <label class="labelCol" for="myEmail">    Email</label>
+    <input type="text" maxlength="256" size="45" id="myEmail" />
   </div>
+  
+  <br>
+    
   <div class="myRow">
-    <label class="labelCol" for="myJob">Message</label>
+    <label class="labelCol" for="myMessage">Message</label>
     <textarea name="myMessage" id="myMessage" rows="3" cols="40"></textarea>
   </div>
+  <br>
   <div class="mySubmit">
     <input type="submit" value="Send message" />
   </div>
+  <br>
 </form>
   <footer></footer>
 

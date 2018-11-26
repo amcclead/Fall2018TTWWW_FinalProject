@@ -143,3 +143,21 @@ footer {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+/* Contact Us */
+
+.container_contact {
+  margin: auto;
+  width: 4em; 
+  float: left; 
+  text-align: right;  
+  display: block;
+  padding-left: 110px;
+  padding-top: 110px;
+
+}
+
+.myRow {text-align: left;}
+input[type=text]{border-radius: 5px;}
+
+textarea {border-radius: 5px;}
