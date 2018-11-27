@@ -161,3 +161,13 @@ footer {
 input[type=text]{border-radius: 5px;}
 
 textarea {border-radius: 5px;}
+
+/* Events */
+
+.container_events {margin: auto;
+    width: 80%;}
+
+img:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=57); 
+}
