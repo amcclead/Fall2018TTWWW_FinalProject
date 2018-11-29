@@ -13,6 +13,8 @@ let navContent= `<ul>
   <li><a href="events.html">Events</a></li>
   <li><a href="media.html">Social Media</a></li>
 </ul>
+<img src="images/sandwich_banner.jpg"
+  alt="sandwich_banner" width="100%">
 `;
 
 
