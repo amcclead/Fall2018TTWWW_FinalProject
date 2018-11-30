@@ -176,7 +176,7 @@ textarea {border-radius: 5px;}
 .container_events {margin: auto;
     width: 80%;}
 
-img:hover {
+.eventimg:hover {
     opacity: 0.6;
     filter: alpha(opacity=57);
 }
