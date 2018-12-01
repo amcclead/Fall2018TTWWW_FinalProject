@@ -58,6 +58,16 @@ img {
   padding-bottom: 30px;
 }
 
+.content{
+  float: left;
+  background-color: #444;
+  border-radius: 30px;
+  max-width: 90%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
 .contentWithImg a {
   color: white;
 }
