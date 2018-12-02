@@ -2,11 +2,21 @@
 
 /* Global */
 
+html * {
+
+font-family: 'Quicksand', sans-serif;
+    
+}
 body {
   margin: 0px;
   background-color: #333;
   color: white;
+  font-family: 'Quicksand', sans-serif;
 }
+
+
+a { text-decoration: none; color: #2980B9;}
+    
 
 /* Header */
 
@@ -33,13 +43,20 @@ img {
 .MainNavigation ul li{
   display: inline-block;
   margin-right: 20px;
+    
+}
 
+.MainNavigation li:hover {
+  background-color: #2980B9;
+  color: #ddd;
+  padding: 11px;
+    
 }
 
 .MainNavigation ul li a {
   color: white;
   text-decoration:none;
-  font-family: arial;
+  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   padding: 10px;
   text-align: center;
@@ -79,7 +96,7 @@ img {
 }
 
 .contentWithImg a:hover {
-  color:red;
+  color: #2980B9;
 }
 
 figure {
@@ -132,29 +149,32 @@ footer {
 footer h4 {
   margin: 3px;
 }
-footer a{
-  color:green;
-}
 
 /* nav dropdown about */
 /* Dropdown Button */
 .dropbtn {
-    background-color: #3498DB;
+    background-color: black;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    font-family: arial;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover {
     background-color: #2980B9;
-    font-family: arial;
+}
+
+/ Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
+
+*/
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -166,7 +186,7 @@ footer a{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #2980B9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -174,7 +194,7 @@ footer a{
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: #2980B9;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -182,7 +202,7 @@ footer a{
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: black;
   color: #2980B9;
 
 }
@@ -193,22 +213,28 @@ footer a{
 /* Contact Us */
 
 .container_contact {
-  margin: auto;
-  width: 4em;
+  margin: 0;
+  width: 12em;
   float: left;
-  text-align: right;
-  display: block;
+  text-align: left;
+  display: flex;
   padding-left: 110px;
-  padding-top: 110px;
+  padding-top: 2px;
 
 }
 
 .myRow {text-align: left;}
+
+.contactForm {padding-right: 60px;
+              padding-left: 60px;}
+
 input[type=text]{border-radius: 5px;}
 
 textarea {border-radius: 5px;}
 
 /* Events */
+
+
 
 .container_events {
   margin: auto;
