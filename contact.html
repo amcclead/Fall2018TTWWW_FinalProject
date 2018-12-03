@@ -9,6 +9,45 @@
   <script src="javascript/dropdown.js" defer></script>
   <script src="javascript/template.js" defer></script>
   <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
+   <script type="text/javascript">
+
+function checkform()     
+{
+    
+  //Added .innerHTML JavaScript form validation to contact.html, includes regular expression constructor (var re = /\S+@\S+/) to validate email text pattern
+
+   var flag = true;
+   var re = /\S+@\S+/;
+    
+    var frm = document.getElementById("contactform")
+
+   if (frm.myName.value == ""){
+      document.getElementById("name_error").innerHTML = " Your name is required!";
+      flag = false;
+       
+  } else { document.getElementById("email_error").innerHTML = "";}
+    
+   if (!re.test(frm.myEmail.value)) {
+   	document.getElementById("email_error").innerHTML = " A valid email address is required!";
+    flag = false;
+    
+} else {document.getElementById("message_error").innerHTML = "";}
+    if (frm.myMessage.value == ""){
+   	document.getElementById("message_error").innerHTML = " Your message is required!";
+    flag = false;
+  
+}
+    
+  if (flag == true) {
+  return true;
+
+}
+else { 
+    return false;
+}
+}
+</script> 
+
 </head>
 <body>
   <nav class="MainNavigation"></nav>
@@ -19,10 +58,11 @@
     <img src = "images/is_compass_improv.jpg" alt=compass improv style=width:405px; height:175px; margin-right: 260px;/>  
     </div>
 <div class="contactForm">      
-    <form action="mailto:contact@renatacamara.com" method="post" name="contactform" id="contactform" enctype="text/plain">
+    <form action="mailto:contact@renatacamara.com" onsubmit="return checkform()"  method="post" name="contactform" id="contactform" enctype="text/plain">
       <div class="myRow">
         <label class="labelCol" for="myName">Name</label>
         <input type="text" maxlength="256" size="45" id="myName" />
+        <div id="name_error" class ="error"></div>
       </div>
 
       <br>
@@ -30,6 +70,8 @@
       <div class="myRow">
         <label class="labelCol" for="myEmail">    Email</label>
         <input type="text" maxlength="256" size="45" id="myEmail" />
+        <div id="email_error" class ="error"></div>
+
       </div>
 
       <br>
@@ -37,6 +79,7 @@
       <div class="myRow">
         <label class="labelCol" for="myMessage">Message</label>
         <textarea name="myMessage" id="myMessage" rows="6" cols="45"></textarea>
+        <div id="message_error" class ="error"></div>
       </div>
       <br>
       <div class="mySubmit">
