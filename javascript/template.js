@@ -1,4 +1,4 @@
-let navContent= `<ul>
+let navContent = `<ul>
   <li><a href="index.html">Home</a></li>
     <li><div class="dropdown"><button onclick="myFunction()" class="dropbtn">About</button>
       <div id= "aboutDropdown" class="dropdown-content">
@@ -17,7 +17,13 @@ let navContent= `<ul>
 `;
 
 
-let footerContent= `<div class="contactUs"><a href="contact.html"><h4>Contact Us</h4></a><br><a href= "https://www.facebook.com/immigrantsandwich"><img class="facebookLogo" src="images/facebook.png" alt="Facebook Icon" width="50px"></div>`
+let footerContent = `<p style="float:right;">
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p><div class="contactUs"><a href="contact.html"><h4>Contact Us</h4></a><a href= "https://www.facebook.com/immigrantsandwich"><img class="facebookLogo" src="images/facebook.png" alt="Facebook Icon" width="50px"></div>`
 
 document.querySelector('.MainNavigation').innerHTML = navContent;
 document.querySelector('footer').innerHTML = footerContent;
