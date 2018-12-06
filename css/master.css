@@ -5,7 +5,7 @@
 html * {
 
 font-family: 'Quicksand', sans-serif;
-    
+
 }
 body {
   margin: 0px;
@@ -16,15 +16,17 @@ body {
 
 
 a { text-decoration: none; color: #2980B9;}
-    
+
 
 /* Header */
 
 img {
   margin: 0px;
 }
+
 .fullWidth {
-  max-width: 100%;
+  width: 100%;
+  margin: 0px;
 }
 
 
@@ -43,14 +45,14 @@ img {
 .MainNavigation ul li{
   display: inline-block;
   margin-right: 20px;
-    
+
 }
 
 .MainNavigation li:hover {
   background-color: #2980B9;
   color: #ddd;
   padding: 11px;
-    
+
 }
 
 .MainNavigation ul li a {
@@ -75,8 +77,10 @@ img {
   padding-bottom: 30px;
 }
 
-.eventImg {
-
+.biosImg {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
 }
 
 .content{
@@ -99,17 +103,12 @@ img {
   color: #2980B9;
 }
 
-figure {
+.caption {
   margin: 0px;
   background: #bbb;
   padding-bottom: 2px;
-}
-
-figure figcaption{
-
   width:100%;
-  margin-left: 10px;
-  display: inline-block;
+  padding-left: 10px;
   font-size: 1.1em;
   color: black;
 }
@@ -268,4 +267,3 @@ margin-right: 15px;
     opacity: 0.6;
     filter: alpha(opacity=57);
 }
-

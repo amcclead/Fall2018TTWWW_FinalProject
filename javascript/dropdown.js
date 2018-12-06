@@ -1,3 +1,5 @@
+// This code came from https://www.w3schools.com/howto/howto_js_dropdown.asp
+// as well as parts pertaining to the drop down menu in the CSS file
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
