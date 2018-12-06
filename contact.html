@@ -4,60 +4,60 @@
   <meta charset="UTF-8">
   <title>Contact::Immigrant Sandwich</title>
   <link rel="stylesheet" href="css/master.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">    
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 <!-- JS below provides the action for the menu dropdown -->
   <script src="javascript/dropdown.js" defer></script>
   <script src="javascript/template.js" defer></script>
   <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
-   <script type="text/javascript">
+   <script>
 
-function checkform()     
+function checkform()
 {
-    
+
   //Added .innerHTML JavaScript form validation to contact.html, includes regular expression constructor (var re = /\S+@\S+/) to validate email text pattern
 
    var flag = true;
    var re = /\S+@\S+/;
-    
+
     var frm = document.getElementById("contactform")
 
    if (frm.myName.value == ""){
       document.getElementById("name_error").innerHTML = " Your name is required!";
       flag = false;
-       
+
   } else { document.getElementById("email_error").innerHTML = "";}
-    
+
    if (!re.test(frm.myEmail.value)) {
    	document.getElementById("email_error").innerHTML = " A valid email address is required!";
     flag = false;
-    
+
 } else {document.getElementById("message_error").innerHTML = "";}
     if (frm.myMessage.value == ""){
    	document.getElementById("message_error").innerHTML = " Your message is required!";
     flag = false;
-  
+
 }
-    
+
   if (flag == true) {
   return true;
 
 }
-else { 
+else {
     return false;
 }
 }
-</script> 
+</script>
 
 </head>
 <body>
   <nav class="MainNavigation"></nav>
-<h1 style="font-weight: bold; padding-left: 114px;">Get in Touch</h1>
-    
+<h1 id="contactHeader">Get in Touch</h1>
+
 <div class="container_contact">
  <div class="compass">
-    <img src = "images/is_compass_improv.jpg" alt=compass improv style=width:405px; height:175px; margin-right: 260px;/>  
+    <img src = "images/is_compass_improv.jpg" alt="compassimprov" style="width:405px; height:175px; margin-right: 260px;"/>
     </div>
-<div class="contactForm">      
+<div class="contactForm">
     <form action="mailto:contact@renatacamara.com" onsubmit="return checkform()"  method="post" name="contactform" id="contactform" enctype="text/plain">
       <div class="myRow">
         <label class="labelCol" for="myName">Name</label>

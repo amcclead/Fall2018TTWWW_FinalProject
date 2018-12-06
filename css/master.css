@@ -29,7 +29,10 @@ img {
   margin: 0px;
 }
 
-
+#contactHeader {
+  font-weight: bold;
+  padding-left: 114px;
+}
 /* nav */
 .MainNavigation {
   width: 100%;
