@@ -26,8 +26,9 @@ let footerContent = `<p style="float:right;">
 </p>
 <div class="contactUs">
 <a href="contact.html"><h4>Contact Us</h4></a>
-<small>Copyright&copy;</small>
-<a href= "https://www.facebook.com/immigrantsandwich"><img class="facebookLogo" src="images/facebook.png" alt="Facebook Icon" width="50px">
+<a href= "https://www.facebook.com/immigrantsandwich"><img class="facebookLogo" src="images/facebook.png" alt="Facebook Icon" width="50px"></a>
+<br>
+<small>Copyright &copy; 2018 Immigrant Sandwich</small>
 </div>`
 
 document.querySelector('.MainNavigation').innerHTML = navContent;
